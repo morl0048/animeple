@@ -33,6 +33,17 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# My gems
+# du site officiel du gem d'intégration de bootstrap 4 avec rails (https://github.com/twbs/bootstrap-rubygem)
+gem 'bootstrap', '~>4.0.0'
+gem 'jquery-rails'
+# icons for bootstrap
+gem "font-awesome-rails"
+# for static pages
+gem 'high_voltage', '~> 3.0.0'
+
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
