@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  url: MyString
+  episode: one
+
+two:
+  type: 
+  url: MyString
+  episode: two
