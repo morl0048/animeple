@@ -1,12 +1,21 @@
 /* Show it is fixed to the top */
-body
-{
+body{
  min-height: 75rem;
  padding-top: 4.5rem;
 }
 
-.icon
-{
+.icon{
   width: 20px;
   height: 20px;
+}
+
+.navbar-dark .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(51, 204, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.btn-outline-success{
+  color: #33ccff;
+  background-color: transparent;
+  background-image: none;
+  border-color: #33ccff;
 }
