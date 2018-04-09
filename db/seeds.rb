@@ -26,6 +26,11 @@ bleachS1E1 = Episode.create(
      name: "1"
    }
  )
+ bleachS1E2 = Episode.create(
+    {
+      name: "2"
+    }
+  )
 
 bleachS1E1L1 = Link.create(
   {
@@ -40,10 +45,19 @@ bleachS1E1L2 = Link.create(
   }
 )
 
+bleachS1E2L1 = Link.create(
+  {
+    typeLink: "openload",
+    url: "https://openload.co/embed/vhVoPzVlXuw/"
+  }
+)
+
 bleachS1E1.links << bleachS1E1L1
 bleachS1E1.links << bleachS1E1L2
+bleachS1E2.links << bleachS1E2L1
 
 bleachS1.episodes << bleachS1E1
+bleachS1.episodes << bleachS1E2
 
 bleach.seasons << bleachS1
 
