@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'seasons/index'
+
   get 'animes/index'
 
   root to: 'animes#index'

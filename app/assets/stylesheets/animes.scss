@@ -1,3 +1,33 @@
 // Place all the styles related to the Animes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.listeAnime{
+  float: left;
+  padding: 0 16px;
+}
+
+ul.items{
+  margin-top: 20px;
+}
+
+ul.items li{
+  text-align: center;
+  list-style: none;
+  display: inline-block;
+}
+
+ul.items li.img{
+  overflow: hidden;
+  position: relative;
+}
+
+ul.items li p.name{
+  line-height: 16px;
+  height: 34px;
+  overflow: hidden;
+}
+
+p{
+  margin: 8px 0;
+}

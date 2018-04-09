@@ -1,17 +1,19 @@
 <h1>Animes#index</h1>
-<ul>
-  <% @animes.each do |a| %>
-  <li>
-    <div>
-      <a href="/">
-        <img src=<%=a.img%>/>
-      </a>
-    </div>
-    <p>
-      <a href="/">
-        <%= a.name %>
-      </a>
-    </p>
-  </li>
-  <% end %>
-</ul>
+<div class="listeAnime">
+  <ul class="items">
+    <% @animes.each do |a| %>
+    <li>
+      <div class="img">
+        <a href="/">
+          <img height=300px, width=180px, src=<%=a.img%>></img>
+        </a>
+      </div>
+      <p class="name">
+        <a href="/">
+          <%= a.name %>
+        </a>
+      </p>
+    </li>
+    <% end %>
+  </ul>
+</div>
