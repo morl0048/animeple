@@ -68,7 +68,7 @@ tg = Anime.create(
   {
     name: "tokyo ghoul",
     description: "Strange murders are happening in Tokyo. Due to liquid evidence at the scene, the police conclude the attacks are the results of 'eater' type ghouls. College buddies Kaneki and Hide come up with the idea that ghouls are imitating humans so that's why they haven't ever seen one. Little did they know that their theory may very well become reality.",
-    img: "/img/T/Tokyo Ghoul.jpg"
+    img: "/img/T/TokyoGhoul.jpg"
   }
 )
 

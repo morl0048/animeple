@@ -1,2 +1,17 @@
 <h1>Animes#index</h1>
-<p>Find me in app/views/animes/index.html.erb</p>
+<ul>
+  <% @animes.each do |a| %>
+  <li>
+    <div>
+      <a href="/">
+        <img src=<%=a.img%>/>
+      </a>
+    </div>
+    <p>
+      <a href="/">
+        <%= a.name %>
+      </a>
+    </p>
+  </li>
+  <% end %>
+</ul>
