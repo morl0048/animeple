@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180408001543) do
+ActiveRecord::Schema.define(version: 20180409150327) do
 
   create_table "animes", force: :cascade do |t|
     t.string "name"
@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20180408001543) do
   end
 
   create_table "links", force: :cascade do |t|
-    t.string "type"
+    t.string "typeLink"
     t.string "url"
     t.integer "episode_id"
     t.datetime "created_at", null: false
@@ -42,7 +42,6 @@ ActiveRecord::Schema.define(version: 20180408001543) do
     t.integer "anime_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "img"
     t.index ["anime_id"], name: "index_seasons_on_anime_id"
   end
 
