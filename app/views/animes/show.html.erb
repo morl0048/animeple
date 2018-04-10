@@ -1,0 +1,19 @@
+<h1>Animes#show</h1>
+<div class="animeInfoBody">
+  <img height=300px, width=180px, src=<%=@anime.img%>>
+  <h1><%=@anime.name%></h1>
+  <p class="info">
+    <span>Info:</span>
+    <%=@anime.description%>
+  </p>
+</div>
+<div class="animeEpisodeListBody">
+  <ul>
+    Liste des episodes order by (name ou date)
+    <% @episodes.each do |e| %>
+    <li>
+      Ep:<%=e.name%>
+    </li>
+    <% end %>
+  </ul>
+</div>

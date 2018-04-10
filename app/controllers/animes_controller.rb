@@ -14,11 +14,18 @@ class AnimesController < ApplicationController
     end
   end
 
-end
+  def showA
+    @anime = Anime.find(params[:id])
+    if @anime.nil?
+      @animes = Anime.all
+      flash.now[:alert] = "This anime doesn't exist!"
+      render "index"
+    end
+    @episodes = Episode.order("name").where("anime_id like ?", params[:id])
+    respond_to do |format|
+      format.html
+      format.xml
+    end
+  end
 
-#class SeasonsController < ApplicationController
-#  def index
-#    @seasons = if params[:term]
-#      Season.where()
-#  end
-#end
+end
