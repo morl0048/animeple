@@ -7,6 +7,11 @@
   padding: 0 16px;
 }
 
+.itemsBorder{
+  padding: 4px 4px 0px 4px;
+  background: linear-gradient(#33ccff, black);
+}
+
 ul.items{
   margin-top: 20px;
 }
@@ -15,6 +20,7 @@ ul.items li{
   text-align: center;
   list-style: none;
   display: inline-block;
+
 }
 
 ul.items li.img{

@@ -2,7 +2,9 @@ class AnimesController < ApplicationController
 
   def index
     @animes = if params[:term]
-      Anime.where("name like ?", "%#{params[:term]}%")
+      Anime.order("name").where("name like ?", "%#{params[:term]}%")
+    elsif params[:ord]
+      Anime.order("name").all
     else
       Anime.all
     end

@@ -3,16 +3,18 @@
   <ul class="items">
     <% @animes.each do |a| %>
     <li>
-      <div class="img">
-        <a href="/">
-          <img height=300px, width=180px, src=<%=a.img%>></img>
-        </a>
+      <div class="itemsBorder">
+        <div class="img">
+          <a href="/">
+            <img height=300px, width=180px, src=<%=a.img%>></img>
+          </a>
+        </div>
+        <p class="name">
+          <a href="/">
+            <%= a.name %>
+          </a>
+        </p>
       </div>
-      <p class="name">
-        <a href="/">
-          <%= a.name %>
-        </a>
-      </p>
     </li>
     <% end %>
   </ul>
