@@ -15,51 +15,43 @@ bleach = Anime.create(
   }
 )
 
-bleachS1 = Season.create(
-  {
-    name: "1"
-  }
-)
-
-bleachS1E1 = Episode.create(
+bleachE1 = Episode.create(
    {
      name: "1"
    }
  )
- bleachS1E2 = Episode.create(
+ bleachE2 = Episode.create(
     {
       name: "2"
     }
   )
 
-bleachS1E1L1 = Link.create(
+bleachE1L1 = Link.create(
   {
     typeLink: "openload",
     url: "https://openload.co/embed/zp0UbdOU_D4/"
   }
 )
-bleachS1E1L2 = Link.create(
+bleachE1L2 = Link.create(
   {
     typeLink: "videoXX",
     url: "https://video.xx.fbcdn.net/v/t42.1790-2/10000000_1579876912108155_7092609091675095040_n.mp4?_nc_cat=0&efg=eyJybHIiOjMwMCwicmxhIjo0MDg3LCJ2ZW5jb2RlX3RhZyI6InN2ZV9zZCJ9&rl=300&vabr=158&oh=a43badbb4d4ccc16a74a9ba03f719b28&oe=5ACCD308"
   }
 )
 
-bleachS1E2L1 = Link.create(
+bleachE2L1 = Link.create(
   {
     typeLink: "openload",
     url: "https://openload.co/embed/vhVoPzVlXuw/"
   }
 )
 
-bleachS1E1.links << bleachS1E1L1
-bleachS1E1.links << bleachS1E1L2
-bleachS1E2.links << bleachS1E2L1
+bleachE1.links << bleachE1L1
+bleachE1.links << bleachE1L2
+bleachE2.links << bleachE2L1
 
-bleachS1.episodes << bleachS1E1
-bleachS1.episodes << bleachS1E2
-
-bleach.seasons << bleachS1
+bleach.episodes << bleachE1
+bleach.episodes << bleachE2
 
 bleach.save()
 
@@ -72,29 +64,63 @@ tg = Anime.create(
   }
 )
 
-tgS1 = Season.create(
-  {
-    name: "1"
-  }
-)
-
-tgS1E1 = Episode.create(
+tgE1 = Episode.create(
    {
      name: "1"
    }
  )
 
-tgS1E1L1 = Link.create(
+tgE1L1 = Link.create(
   {
     typeLink: "openload",
     url: "https://openload.co/embed/KFGKvkr8hQ4/"
   }
 )
 
-tgS1E1.links << tgS1E1L1
+tgE1.links << tgE1L1
 
-tgS1.episodes << tgS1E1
-
-tg.seasons << tgS1
+tg.episodes << tgE1
 
 tg.save()
+
+######AKAME GA KILL####################################################
+akameGaKill = Anime.create(
+  {
+    name: "akame ga kill",
+    description: "Akame ga Kill! (Japanese: アカメが斬る! Hepburn: Akame ga Kiru!, literally meaning \"Akame Slashes!\") is a Japanese shōnen manga series written by Takahiro and illustrated by Tetsuya Tashiro. It started serialization in Square Enix's Gangan Joker in March 2010. The story focuses on Tatsumi who is a young villager that travels to the Capital to raise money for his home only to discover a strong corruption in the area. The assassin group known as Night Raid recruits the young man to help them in their fight against the Empire to end its corruption. The series is known for its graphic content.\nThe series was licensed by Yen Press in June 2014. A prequel manga focused on Akame's backstory, Akame ga Kill! Zero, began serialization in Square Enix's Monthly Big Gangan in October 2013. A spin-off sequel, Hinowa ga Yuku!, began serialization in 2017. An anime television series adaptation of the main series premiered in Japan in July 2014. This is the second work in the Japanese game developer MinatoSoft's Takahiro IV Project.",
+    img: "/img/A/akame_ga_kill.jpg"
+  }
+)
+
+akameGaKillE1 = Episode.create(
+   {
+     name: "1"
+   }
+ )
+akameGaKillE2 = Episode.create(
+    {
+      name: "2"
+    }
+  )
+
+akameGaKillE1L1 = Link.create(
+  {
+    typeLink: "openload",
+    url: "https://openload.co/embed/oQe9Aj7d2sw/"
+  }
+)
+
+akameGaKillE2L1 = Link.create(
+  {
+    typeLink: "openload",
+    url: "https://openload.co/embed/wav4T2FoqTE/"
+  }
+)
+
+akameGaKillE1.links << akameGaKillE1L1
+akameGaKillE2.links << akameGaKillE2L1
+
+akameGaKill.episodes << akameGaKillE1
+akameGaKill.episodes << akameGaKillE2
+
+akameGaKill.save()

@@ -13,3 +13,10 @@ class AnimesController < ApplicationController
   end
 
 end
+
+#class SeasonsController < ApplicationController
+#  def index
+#    @seasons = if params[:term]
+#      Season.where()
+#  end
+#end

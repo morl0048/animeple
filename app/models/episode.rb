@@ -1,4 +1,4 @@
 class Episode < ApplicationRecord
-  belongs_to :season
+  belongs_to :anime
   has_many :links
 end
