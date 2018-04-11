@@ -14,7 +14,7 @@ class AnimesController < ApplicationController
     end
   end
 
-  def showA
+  def show
     @anime = Anime.find(params[:id])
     if @anime.nil?
       @animes = Anime.all

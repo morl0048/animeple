@@ -5,12 +5,12 @@
     <li>
       <div class="itemsBorder">
         <div class="img">
-          <a href="/<%=a.id%>">
-            <img height=300px, width=180px, src=<%=a.img%>></img>
-          </a>
+          <%= link_to a do %>
+            <img height=300px, width=180px, alt="<%=a.name%>Img", src=<%=a.img%>></img>
+          <% end %>
         </div>
         <p class="name">
-          <%= link_to a.name, action: :showA, id: a.id %> <%# Je veux passer l'id de "a" a mon controller dans showA %>
+          <%= link_to a.name, a, class: "myLink"%>
         </p>
       </div>
     </li>
