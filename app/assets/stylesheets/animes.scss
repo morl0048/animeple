@@ -46,3 +46,26 @@ p{
 .myLink:hover{
   text-decoration: none;
 }
+
+.info{
+  color: white;
+}
+
+.info span{
+  color: #33ccff;
+  font-size: 150%;
+}
+
+.animeInfoBody {
+  display: inline-block;
+}
+
+.animeInfoBody h1{
+  text-transform: uppercase;
+}
+
+.animeInfoBody img{
+  height: 400px;
+  width: 250px;
+  float: left;
+}

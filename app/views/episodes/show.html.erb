@@ -1,0 +1,11 @@
+<h1>Episodes#show</h1>
+<div class="episodeBody">
+  <h1>Episode <%=@episode.name%></h1>
+  <%= @links.each do |l| %>
+    <h2><%=l.typeLink%></h2>
+    <iframe src=<%=l.url%> scrolling="no" frameborder="0" width="700" height="430" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"> </iframe>
+  <% end %>
+</div>
+<div class="episodeFooter">
+  mettre les boutons next/back et le choix de link
+</div>

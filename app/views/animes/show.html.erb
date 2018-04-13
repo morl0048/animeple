@@ -1,6 +1,6 @@
 <h1>Animes#show</h1>
 <div class="animeInfoBody">
-  <img height=300px, width=180px, src=<%=@anime.img%> >
+  <img src=<%=@anime.img%> >
   <h1><%=@anime.name%></h1>
   <p class="info">
     <span>Info:</span>
@@ -8,11 +8,11 @@
   </p>
 </div>
 <div class="animeEpisodeListBody">
+  <h2>Episodes list:</h2>
   <ul>
-    Liste des episodes order by (name ou date)
     <% @episodes.each do |e| %>
     <li>
-      Ep:<%=e.name%>
+      <%= link_to e.name, {controller: "episodes", action: "show", id:e.id }, class: "badge badge-dark" %>
     </li>
     <% end %>
   </ul>
