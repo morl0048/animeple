@@ -1,6 +1,6 @@
 <div class="episodeBody">
   <h1>Episode <%=@episode.name%></h1>
-  <%= @links.each do |l| %>
+  <% @links.each do |l| %>
     <h2><%=l.typeLink%></h2>
     <iframe src=<%=l.url%> scrolling="no" frameborder="0" width="700" height="430" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"> </iframe>
   <% end %>
