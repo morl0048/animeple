@@ -6,5 +6,11 @@
   <% end %>
 </div>
 <div class="episodeFooter">
-  mettre les boutons next/back
+  <% if @prev != nil %>
+    <%= link_to "<< prev", @prev, class: "badge badge-pill badge-dark posLeft" %>
+  <% end %>
+
+  <% if @next != nil %>
+    <%= link_to "next >>", @next, class: "badge badge-pill badge-dark posRight" %>
+  <% end %>
 </div>

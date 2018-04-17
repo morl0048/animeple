@@ -6,6 +6,13 @@ class EpisodesController < ApplicationController
       render "index"
     end
     @links = Link.order("typeLink").where("episode_id like ?", params[:id])
+
+    @episodes = Episode.order("name").where("anime_id like ?", @episode.anime_id)
+
+    @prev = @episodes.where("id < ?", @episode.id).last
+
+    @next = @episodes.where("id > ?", @episode.id).first
+
     respond_to do |format|
       format.html
       format.xml
