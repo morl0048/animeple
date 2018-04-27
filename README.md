@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Clonez cette application sur votre ordinateur.
+Rendez vous au niveau du dossier de l'application "animeple".
+Entrez la commande "rake db:reset".
+Entrez la commande "rails s".
+Ouvrez un navigateur et entrez l'adresse "localhost:3000".
